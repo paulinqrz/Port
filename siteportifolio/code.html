@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projetos - Paulo Augusto Monteiro de Queiroz</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-primary-fixed-variant": "#293ca0",
+          "outline-variant": "#c5c5d4",
+          "surface-tint": "#4355b9",
+          "surface-bright": "#f9f9ff",
+          "primary-fixed": "#dee0ff",
+          "inverse-surface": "#263143",
+          "secondary-fixed": "#d3e4fe",
+          "inverse-on-surface": "#ecf1ff",
+          "on-surface": "#111c2d",
+          "surface-container-lowest": "#ffffff",
+          "surface-container": "#e7eeff",
+          "surface-dim": "#cfdaf2",
+          "surface-variant": "#d8e3fb",
+          "on-surface-variant": "#454652",
+          "secondary-container": "#d0e1fb",
+          "on-secondary-container": "#54647a",
+          "tertiary-container": "#00608a",
+          "surface-container-low": "#f0f3ff",
+          "primary-fixed-dim": "#bac3ff",
+          "outline": "#757684",
+          "on-primary": "#ffffff",
+          "surface": "#f9f9ff",
+          "secondary": "#505f76",
+          "primary": "#24389c",
+          "on-primary-container": "#cacfff",
+          "inverse-primary": "#bac3ff",
+          "on-background": "#111c2d",
+          "on-secondary": "#ffffff",
+          "primary-container": "#3f51b5",
+          "tertiary-fixed": "#c9e6ff",
+          "tertiary": "#004768",
+          "surface-container-high": "#dee8ff",
+          "surface-container-highest": "#d8e3fb",
+          "background": "#f9f9ff",
+          "on-primary-fixed": "#00105c"
+        },
+        borderRadius: {
+          DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"
+        },
+        spacing: {
+          "container-max": "1280px", gutter: "24px", base: "8px",
+          xs: "4px", margin: "32px", lg: "48px", md: "24px", sm: "12px", xl: "80px"
+        },
+        fontFamily: {
+          h1: ["Inter"], h2: ["Inter"], h3: ["Inter"],
+          "display-xl": ["Inter"], "display-lg": ["Inter"],
+          "body-lg": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"],
+          "label-md": ["Inter"], "label-sm": ["Inter"]
+        },
+        fontSize: {
+          "h2": ["30px", {lineHeight:"38px",fontWeight:"600"}],
+          "body-sm": ["14px", {lineHeight:"20px",fontWeight:"400"}],
+          "label-sm": ["12px", {lineHeight:"16px",fontWeight:"500"}],
+          "h1": ["36px", {lineHeight:"44px",letterSpacing:"-0.01em",fontWeight:"700"}],
+          "display-xl": ["clamp(36px,6vw,60px)", {lineHeight:"1.2",letterSpacing:"-0.02em",fontWeight:"800"}],
+          "body-lg": ["18px", {lineHeight:"28px",fontWeight:"400"}],
+          "h3": ["24px", {lineHeight:"32px",fontWeight:"600"}],
+          "body-md": ["16px", {lineHeight:"24px",fontWeight:"400"}],
+          "display-lg": ["48px", {lineHeight:"60px",letterSpacing:"-0.02em",fontWeight:"700"}],
+          "label-md": ["14px", {lineHeight:"20px",letterSpacing:"0.05em",fontWeight:"600"}]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; }
+  body { font-family: 'Inter', sans-serif; background-color: #f9f9ff; min-height: max(884px, 100dvh); }
+
+  *, *::before, *::after { transition: background-color 0.3s ease, border-color 0.3s ease, color 0.2s ease; }
+  button, a { transition: all 0.2s ease !important; }
+
+  html.dark body { background-color: #0f172a; }
+
+  html.light .icon-dark { display: inline; }
+  html.light .icon-light { display: none; }
+  html.dark .icon-dark { display: none; }
+  html.dark .icon-light { display: inline; }
+
+  @keyframes pulse-gentle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.05); }
+  }
+  .animate-pulse-gentle { animation: pulse-gentle 2s ease-in-out infinite; }
+</style>
+</head>
+<body class="font-body-md text-on-surface dark:text-slate-100">
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 sm:px-6 h-16 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200/60 dark:border-slate-800/60 shadow-sm">
+  <div class="flex items-center gap-3">
+    <button id="menuBtn" class="p-2 rounded-lg text-indigo-600 dark:text-indigo-400 hover:bg-slate-100 dark:hover:bg-slate-800 active:scale-95">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+    <a href="index.html" class="text-xl font-bold tracking-tighter text-slate-900 dark:text-white">P.A.M.Q.</a>
+  </div>
+
+  <nav class="hidden md:flex gap-6 lg:gap-8 items-center">
+    <a href="index.html" class="text-sm font-medium tracking-wide text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-300 px-3 py-1 rounded">Início</a>
+    <a href="about.html" class="text-sm font-medium tracking-wide text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-300 px-3 py-1 rounded">Sobre Mim</a>
+    <a href="code.html" class="text-sm font-medium tracking-wide text-indigo-600 dark:text-indigo-400 font-bold px-3 py-1 rounded">Projetos</a>
+  </nav>
+
+  <button id="themeToggle" class="p-2 rounded-lg text-indigo-600 dark:text-indigo-400 hover:bg-slate-100 dark:hover:bg-slate-800 active:scale-95">
+    <span class="material-symbols-outlined icon-dark">dark_mode</span>
+    <span class="material-symbols-outlined icon-light">light_mode</span>
+  </button>
+</header>
+
+<!-- Mobile slide menu -->
+<div id="mobileMenu" class="fixed inset-0 z-40 hidden">
+  <div id="menuOverlay" class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+  <div class="absolute top-0 left-0 h-full w-72 bg-white dark:bg-slate-900 shadow-2xl flex flex-col pt-20 px-6 gap-2">
+    <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 font-medium">
+      <span class="material-symbols-outlined">home</span> Início
+    </a>
+    <a href="about.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 font-medium">
+      <span class="material-symbols-outlined">person</span> Sobre Mim
+    </a>
+    <a href="code.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-indigo-600 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-indigo-950/40">
+      <span class="material-symbols-outlined">account_tree</span> Projetos
+    </a>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main class="min-h-screen pt-28 sm:pt-32 pb-28 md:pb-20 flex flex-col items-center justify-center px-4 sm:px-8">
+
+  <!-- Empty State -->
+  <div class="max-w-2xl w-full text-center space-y-6">
+
+    <!-- Icon Visual -->
+    <div class="relative w-40 h-40 sm:w-48 sm:h-48 mx-auto mb-8 sm:mb-12">
+      <div class="absolute inset-0 bg-primary/5 rounded-full blur-3xl"></div>
+      <div class="relative flex items-center justify-center w-full h-full bg-white dark:bg-slate-800 border border-outline-variant dark:border-slate-700 rounded-xl shadow-sm overflow-hidden">
+        <div class="absolute -top-4 -right-4 w-12 h-12 bg-primary-fixed-dim rounded-full opacity-20"></div>
+        <div class="absolute -bottom-2 -left-2 w-8 h-8 bg-tertiary-fixed rounded-full opacity-30"></div>
+        <span class="material-symbols-outlined text-5xl sm:text-6xl text-primary dark:text-indigo-400 opacity-20" style="font-variation-settings:'FILL' 1;">account_tree</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <span class="material-symbols-outlined text-4xl sm:text-5xl text-primary dark:text-indigo-400 animate-pulse-gentle">construction</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text -->
+    <div class="space-y-3 px-4">
+      <h1 class="font-h1 text-h1 text-on-surface dark:text-white">Em breve: Projetos Incríveis.</h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant dark:text-slate-400 max-w-lg mx-auto">
+        Atualmente estou trabalhando em novos desafios. Volte em breve para conferir!
+      </p>
+    </div>
+
+    <!-- Back button -->
+    <div class="pt-4 sm:pt-6">
+      <a href="index.html" class="inline-flex items-center gap-2 px-8 sm:px-lg py-3 sm:py-sm bg-primary text-on-primary font-label-md text-label-md rounded-lg shadow-[0_2px_0_rgba(0,0,0,0.15)] hover:opacity-90 active:scale-95">
+        <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+        Voltar
+      </a>
+    </div>
+  </div>
+
+  <!-- Decorative grid background -->
+  <div class="fixed inset-0 pointer-events-none -z-10 opacity-[0.03] dark:opacity-[0.05]">
+    <div class="absolute inset-0" style="background-image: linear-gradient(to right, #24389c 1px, transparent 1px), linear-gradient(to bottom, #24389c 1px, transparent 1px); background-size: 40px 40px;"></div>
+  </div>
+</main>
+
+<!-- Bottom Nav (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-4 bg-white/95 dark:bg-slate-900/95 backdrop-blur-lg border-t border-slate-200 dark:border-slate-800 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] rounded-t-xl" style="padding-bottom: env(safe-area-inset-bottom, 0px);">
+  <a href="index.html" class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:text-indigo-500 text-[11px] font-semibold uppercase tracking-wider">
+    <span class="material-symbols-outlined">home</span>
+    Início
+  </a>
+  <a href="about.html" class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:text-indigo-500 text-[11px] font-semibold uppercase tracking-wider">
+    <span class="material-symbols-outlined">person</span>
+    Sobre Mim
+  </a>
+  <a href="code.html" class="flex flex-col items-center justify-center text-indigo-600 dark:text-indigo-400 scale-110 text-[11px] font-semibold uppercase tracking-wider">
+    <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">account_tree</span>
+    Projetos
+  </a>
+</nav>
+
+<!-- FOOTER -->
+<footer class="w-full py-10 sm:py-12 px-6 flex flex-col items-center gap-4 sm:gap-6 mb-20 md:mb-0 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+  <div class="font-bold text-slate-700 dark:text-slate-300">P.A.M.Q.</div>
+  <div class="flex gap-6 sm:gap-8">
+    <a href="#" class="text-xs text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 underline underline-offset-4">LinkedIn</a>
+    <a href="#" class="text-xs text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 underline underline-offset-4">GitHub</a>
+    <a href="#" class="text-xs text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 underline underline-offset-4">Email</a>
+  </div>
+  <div class="text-xs text-slate-500 dark:text-slate-400">© 2024 Paulo Augusto Monteiro de Queiroz</div>
+</footer>
+
+<script>
+  // --- THEME SYSTEM ---
+  function setTheme(theme) {
+    const html = document.documentElement;
+    if (theme === 'dark') {
+      html.classList.add('dark');
+      html.classList.remove('light');
+    } else {
+      html.classList.remove('dark');
+      html.classList.add('light');
+    }
+    localStorage.setItem('theme', theme);
+  }
+
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  setTheme(savedTheme);
+
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const current = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+    setTheme(current === 'dark' ? 'light' : 'dark');
+  });
+
+  // --- MOBILE MENU ---
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuOverlay = document.getElementById('menuOverlay');
+
+  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  menuOverlay.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+</script>
+</body>
+</html>
