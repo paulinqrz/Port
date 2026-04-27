@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sobre Mim - Paulo Augusto Monteiro de Queiroz</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-primary-fixed-variant": "#293ca0",
+          "outline-variant": "#c5c5d4",
+          "surface-tint": "#4355b9",
+          "surface-bright": "#f9f9ff",
+          "primary-fixed": "#dee0ff",
+          "inverse-surface": "#263143",
+          "secondary-fixed": "#d3e4fe",
+          "inverse-on-surface": "#ecf1ff",
+          "on-surface": "#111c2d",
+          "surface-container-lowest": "#ffffff",
+          "surface-container": "#e7eeff",
+          "surface-dim": "#cfdaf2",
+          "surface-variant": "#d8e3fb",
+          "on-surface-variant": "#454652",
+          "secondary-container": "#d0e1fb",
+          "on-secondary-container": "#54647a",
+          "tertiary-container": "#00608a",
+          "surface-container-low": "#f0f3ff",
+          "primary-fixed-dim": "#bac3ff",
+          "outline": "#757684",
+          "on-tertiary": "#ffffff",
+          "on-primary": "#ffffff",
+          "surface": "#f9f9ff",
+          "secondary": "#505f76",
+          "primary": "#24389c",
+          "on-primary-container": "#cacfff",
+          "inverse-primary": "#bac3ff",
+          "on-background": "#111c2d",
+          "on-secondary": "#ffffff",
+          "primary-container": "#3f51b5",
+          "tertiary-fixed": "#c9e6ff",
+          "tertiary": "#004768",
+          "surface-container-high": "#dee8ff",
+          "surface-container-highest": "#d8e3fb",
+          "background": "#f9f9ff",
+          "on-primary-fixed": "#00105c"
+        },
+        borderRadius: {
+          DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"
+        },
+        spacing: {
+          "container-max": "1280px", gutter: "24px", base: "8px",
+          xs: "4px", margin: "32px", lg: "48px", md: "24px", sm: "12px", xl: "80px"
+        },
+        fontFamily: {
+          h1: ["Inter"], h2: ["Inter"], h3: ["Inter"],
+          "display-xl": ["Inter"], "display-lg": ["Inter"],
+          "body-lg": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"],
+          "label-md": ["Inter"], "label-sm": ["Inter"]
+        },
+        fontSize: {
+          "h2": ["30px", {lineHeight:"38px",fontWeight:"600"}],
+          "body-sm": ["14px", {lineHeight:"20px",fontWeight:"400"}],
+          "label-sm": ["12px", {lineHeight:"16px",fontWeight:"500"}],
+          "h1": ["36px", {lineHeight:"44px",letterSpacing:"-0.01em",fontWeight:"700"}],
+          "display-xl": ["clamp(36px,6vw,60px)", {lineHeight:"1.2",letterSpacing:"-0.02em",fontWeight:"800"}],
+          "body-lg": ["18px", {lineHeight:"28px",fontWeight:"400"}],
+          "h3": ["24px", {lineHeight:"32px",fontWeight:"600"}],
+          "body-md": ["16px", {lineHeight:"24px",fontWeight:"400"}],
+          "display-lg": ["clamp(32px,5vw,48px)", {lineHeight:"1.25",letterSpacing:"-0.02em",fontWeight:"700"}],
+          "label-md": ["14px", {lineHeight:"20px",letterSpacing:"0.05em",fontWeight:"600"}]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; }
+  body { font-family: 'Inter', sans-serif; min-height: max(884px, 100dvh); }
+
+  *, *::before, *::after { transition: background-color 0.3s ease, border-color 0.3s ease, color 0.2s ease; }
+  button, a { transition: all 0.2s ease !important; }
+
+  html.light .icon-dark { display: inline; }
+  html.light .icon-light { display: none; }
+  html.dark .icon-dark { display: none; }
+  html.dark .icon-light { display: inline; }
+
+  .glass-card {
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(226,232,240,0.8);
+  }
+  html.dark .glass-card {
+    background: rgba(30,41,59,0.7);
+    border: 1px solid rgba(71,85,105,0.5);
+  }
+</style>
+</head>
+<body class="bg-background dark:bg-slate-900 text-on-background dark:text-slate-100 min-h-screen">
+
+<!-- HEADER -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 sm:px-6 h-16 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200/60 dark:border-slate-800/60 shadow-sm">
+  <div class="flex items-center gap-3">
+    <button id="menuBtn" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 active:scale-95 text-indigo-600 dark:text-indigo-400">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+    <a href="index.html" class="text-xl font-bold tracking-tighter text-slate-900 dark:text-white">P.A.M.Q.</a>
+  </div>
+
+  <div class="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-medium tracking-wide">
+    <a href="index.html" class="text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-300">Início</a>
+    <a href="about.html" class="text-indigo-600 dark:text-indigo-400 font-bold">Sobre Mim</a>
+    <a href="code.html" class="text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-300">Projetos</a>
+  </div>
+
+  <button id="themeToggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 active:scale-95 text-indigo-600 dark:text-indigo-400">
+    <span class="material-symbols-outlined icon-dark">dark_mode</span>
+    <span class="material-symbols-outlined icon-light">light_mode</span>
+  </button>
+</nav>
+
+<!-- Mobile slide menu -->
+<div id="mobileMenu" class="fixed inset-0 z-40 hidden">
+  <div id="menuOverlay" class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+  <div class="absolute top-0 left-0 h-full w-72 bg-white dark:bg-slate-900 shadow-2xl flex flex-col pt-20 px-6 gap-2">
+    <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 font-medium">
+      <span class="material-symbols-outlined">home</span> Início
+    </a>
+    <a href="about.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-indigo-600 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-indigo-950/40">
+      <span class="material-symbols-outlined">person</span> Sobre Mim
+    </a>
+    <a href="code.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 font-medium">
+      <span class="material-symbols-outlined">account_tree</span> Projetos
+    </a>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main class="pt-24 sm:pt-32 pb-28 md:pb-xl px-4 sm:px-8 max-w-[1280px] mx-auto">
+
+  <!-- Page Header -->
+  <header class="mb-10 sm:mb-16">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container dark:bg-indigo-900/40 text-on-secondary-container dark:text-indigo-300 mb-4">
+      <span class="material-symbols-outlined text-[16px]">account_circle</span>
+      <span class="font-label-md text-label-sm uppercase">Perfil Profissional</span>
+    </div>
+    <h1 class="font-display-lg text-display-lg text-on-surface dark:text-white mb-4">Sobre Mim</h1>
+    <p class="font-body-lg text-body-lg text-on-surface-variant dark:text-slate-400 max-w-2xl">
+      Desenvolvedor apaixonado por criar soluções eficientes e elegantes, focado em transformar problemas complexos em experiências intuitivas.
+    </p>
+  </header>
+
+  <!-- Content Grid -->
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
+
+    <!-- Left Column -->
+    <section class="lg:col-span-7 space-y-6">
+      <div class="glass-card p-6 sm:p-8 rounded-xl shadow-sm">
+        <h2 class="font-h2 text-h2 text-on-surface dark:text-white mb-4 flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary dark:text-indigo-400">description</span>
+          Resumo Profissional
+        </h2>
+        <p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-400 leading-relaxed">
+          Paulo Augusto Monteiro de Queiroz é um profissional em transição de carreira para a área de tecnologia, atualmente cursando Análise e Desenvolvimento de Sistemas. Com uma base sólida em lógica de programação e arquitetura de sistemas, Paulo busca aplicar seus conhecimentos técnicos em ambientes colaborativos e inovadores.
+        </p>
+      </div>
+
+      <div class="glass-card p-6 sm:p-8 rounded-xl shadow-sm">
+        <h2 class="font-h2 text-h2 text-on-surface dark:text-white mb-4 flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary dark:text-indigo-400">school</span>
+          Formação Acadêmica
+        </h2>
+        <div class="flex gap-4">
+          <div class="h-12 w-12 rounded-lg bg-surface-container dark:bg-slate-700 flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-primary dark:text-indigo-400 text-3xl">account_balance</span>
+          </div>
+          <div>
+            <h3 class="font-h3 text-h3 text-on-surface dark:text-white">Análise e Desenvolvimento de Sistemas</h3>
+            <p class="font-body-md text-body-md text-primary dark:text-indigo-400 font-medium">UCDB - Universidade Católica Dom Bosco</p>
+            <p class="font-label-sm text-label-sm text-outline dark:text-slate-500 mt-1">Em andamento • Campo Grande, MS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right Column -->
+    <aside class="lg:col-span-5 space-y-6">
+      <div class="bg-primary p-6 sm:p-8 rounded-xl text-on-primary shadow-lg relative overflow-hidden">
+        <div class="absolute -right-8 -top-8 opacity-10">
+          <span class="material-symbols-outlined text-[160px]">code</span>
+        </div>
+        <h2 class="font-h2 text-h2 mb-4 sm:mb-6 relative z-10">Competências Técnicas</h2>
+        <div class="flex flex-wrap gap-2 relative z-10">
+          <span class="px-3 py-1 bg-white/20 rounded-full font-label-sm text-label-sm backdrop-blur-sm border border-white/10">JavaScript</span>
+          <span class="px-3 py-1 bg-white/20 rounded-full font-label-sm text-label-sm backdrop-blur-sm border border-white/10">Java</span>
+          <span class="px-3 py-1 bg-white/20 rounded-full font-label-sm text-label-sm backdrop-blur-sm border border-white/10">C</span>
+          <span class="px-3 py-1 bg-white/20 rounded-full font-label-sm text-label-sm backdrop-blur-sm border border-white/10">MySQL</span>
+          <span class="px-3 py-1 bg-white/20 rounded-full font-label-sm text-label-sm backdrop-blur-sm border border-white/10">Git</span>
+          <span class="px-3 py-1 bg-white/20 rounded-full font-label-sm text-label-sm backdrop-blur-sm border border-white/10">Python</span>
+          <span class="px-3 py-1 bg-white/20 rounded-full font-label-sm text-label-sm backdrop-blur-sm border border-white/10">HTML5 / CSS3</span>
+        </div>
+      </div>
+
+      <div class="glass-card p-6 sm:p-8 rounded-xl shadow-sm">
+        <h2 class="font-h2 text-h2 text-on-surface dark:text-white mb-4 sm:mb-6">Habilidades Interpessoais</h2>
+        <ul class="space-y-3 sm:space-y-4">
+          <li class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant dark:text-slate-400">
+            <span class="material-symbols-outlined text-primary dark:text-indigo-400 text-[20px]">groups</span>
+            Trabalho em Equipe
+          </li>
+          <li class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant dark:text-slate-400">
+            <span class="material-symbols-outlined text-primary dark:text-indigo-400 text-[20px]">psychology</span>
+            Resolução de Problemas
+          </li>
+          <li class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant dark:text-slate-400">
+            <span class="material-symbols-outlined text-primary dark:text-indigo-400 text-[20px]">chat</span>
+            Comunicação Assertiva
+          </li>
+          <li class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant dark:text-slate-400">
+            <span class="material-symbols-outlined text-primary dark:text-indigo-400 text-[20px]">auto_stories</span>
+            Aprendizado Contínuo
+          </li>
+        </ul>
+      </div>
+
+      <div class="relative rounded-xl overflow-hidden h-44 sm:h-48">
+        <img alt="Workspace setup" class="w-full h-full object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZa5DvE9I1hkcLwB17KwONYS5ghToLZV5f3lGGCnNe6A0sDJtvUchB6-k7hkE4gc_bBZz8gJ_ypF0DWHWwKO632Rp1Bxr1kGjIyK3jtXYxtk0mjYWpzvhGLOCP8l99tWzXjEPfRm-ET2J4ecvUr34q72uZIpQAIZkfsmbxuN22WneHtt3Oty_A7U1ClOlH-ahPyPoUx_kyn_TtFc8eI2OH3HQLk1WBCdTKu9maBB4qpwbdqLPtsXW9JBbLbTdgtp2g3_9wwl9xqz7h"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4 sm:p-6">
+          <p class="text-white font-label-md text-label-sm italic">"Codificando o futuro, um pixel por vez."</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Back button -->
+  <div class="mt-12 sm:mt-16 flex justify-center">
+    <a href="index.html" class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-on-primary font-label-md rounded-xl shadow-md hover:opacity-90 active:scale-95">
+      <span class="material-symbols-outlined">arrow_back</span>
+      Voltar para o Início
+    </a>
+  </div>
+</main>
+
+<!-- Bottom Nav (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-4 bg-white/95 dark:bg-slate-900/95 backdrop-blur-lg border-t border-slate-200 dark:border-slate-800 shadow-[0_-4px_12px_rgba(0,0,0,0.05)]" style="padding-bottom: env(safe-area-inset-bottom, 0px);">
+  <a href="index.html" class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:text-indigo-500">
+    <span class="material-symbols-outlined">home</span>
+    <span class="text-[11px] font-semibold uppercase tracking-wider">Início</span>
+  </a>
+  <a href="about.html" class="flex flex-col items-center justify-center text-indigo-600 dark:text-indigo-400 scale-110">
+    <span class="material-symbols-outlined">person</span>
+    <span class="text-[11px] font-semibold uppercase tracking-wider">Sobre Mim</span>
+  </a>
+  <a href="code.html" class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:text-indigo-500">
+    <span class="material-symbols-outlined">account_tree</span>
+    <span class="text-[11px] font-semibold uppercase tracking-wider">Projetos</span>
+  </a>
+</nav>
+
+<!-- FOOTER -->
+<footer class="w-full py-10 sm:py-12 px-6 flex flex-col items-center gap-4 sm:gap-6 mb-20 md:mb-0 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+  <div class="flex gap-6 sm:gap-8">
+    <a href="#" class="text-xs text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 underline underline-offset-4">LinkedIn</a>
+    <a href="#" class="text-xs text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 underline underline-offset-4">GitHub</a>
+    <a href="#" class="text-xs text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 underline underline-offset-4">Email</a>
+  </div>
+  <p class="text-xs text-slate-500 dark:text-slate-400">© 2024 Paulo Augusto Monteiro de Queiroz</p>
+</footer>
+
+<script>
+  // --- THEME SYSTEM ---
+  function setTheme(theme) {
+    const html = document.documentElement;
+    if (theme === 'dark') {
+      html.classList.add('dark');
+      html.classList.remove('light');
+    } else {
+      html.classList.remove('dark');
+      html.classList.add('light');
+    }
+    localStorage.setItem('theme', theme);
+  }
+
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  setTheme(savedTheme);
+
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const current = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+    setTheme(current === 'dark' ? 'light' : 'dark');
+  });
+
+  // --- MOBILE MENU ---
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuOverlay = document.getElementById('menuOverlay');
+
+  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  menuOverlay.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+</script>
+</body>
+</html>
